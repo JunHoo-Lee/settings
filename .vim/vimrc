@@ -1,0 +1,16 @@
+syntax on
+set tags=/Users/ijunhu/TransUnet/MTrans/tags
+set backspace=indent,eol,start
+language en_US
+set tabstop=2
+set nu
+set autoindent
+set cindent
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'frazrepo/vim-rainbow'
+Plug 'ehamberg/vim-cute-python'
+
+call plug#end()
+
+nmap <C-n> :NERDTreeToggle<CR>
